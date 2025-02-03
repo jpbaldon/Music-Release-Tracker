@@ -262,6 +262,8 @@ class Ui_MainWindow(object):
         self.progressBar.show()
         
         for artist in artist_list:
+            if(artist["limit"] == None):
+                artist["limit"] = DEFAULT_RESULTS_LIM
             response = get_albums_of_artist(artist["name"], artist["limit"])
             try:
                 o = response.json()
