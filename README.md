@@ -6,7 +6,7 @@
  I find it easy to miss when my favorite artists release music. I figured it would be nice to just be able to run a program in the background once a month or so to see if I missed something worthwhile.
 
  ## Usage
-1. Add any music artists that have content on itunes by entering their name in the text field on the Followed Artists Tab and then clicking the Follow button (name of the artist must match the spelling of that artist on itunes)
+1. Add any music artists that have content on itunes by entering their name in the text field on the Followed Artists Tab and then clicking the Follow button (name of the artist must match the spelling of that artist on itunes) (alternatively, you can just add a list of artist names to column A of the artists.csv file before running the app)
 2. Unfollow Artists by select their row in the table and clicking the Unfollow Highlighted Artists button.
 3. Search for recent releases from followed artists by navigating to the Albums to Check Out Tab, selecting a timeframe, and then clicking search.
 
