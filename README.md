@@ -2,13 +2,15 @@
  An app implemeneted with PyQt that uses the itunes API to find recent releases from followed artists
 
  ## Purpose
-
  I find it easy to miss when my favorite artists release music. I figured it would be nice to just be able to run a program in the background once a month or so to see if I missed something worthwhile.
 
  ## Usage
-1. Add any music artists that have content on itunes by entering their name in the text field on the Followed Artists Tab and then clicking the Follow button (name of the artist must match the spelling of that artist on itunes) (alternatively, you can just add a list of artist names to column A of the artists.csv file before running the app)
-2. Unfollow Artists by select their row in the table and clicking the Unfollow Highlighted Artists button.
-3. Search for recent releases from followed artists by navigating to the Albums to Check Out Tab, selecting a timeframe, and then clicking search.
+1. Add any music artists that have content on itunes by entering their name in the text field on the Followed Artists Tab and then clicking the Follow button
+   * name of the artist must match the spelling of that artist on itunes
+   * alternatively, you can just add a list of artist names to column A of the artists.csv file before running the app
+   * an example list of artists is provided (you can remove all of these at once by clicking the upper left corner of the table and clicking the unfollow button)
+3. Unfollow Artists by selecting their row in the table and clicking the Unfollow Highlighted Artists button.
+4. Search for recent releases from followed artists by navigating to the Albums to Check Out Tab, selecting a timeframe, and then clicking search.
 
 ## Further Info
 itunes limits the amount of get requests per ip address to about 20 per min. Consequently, this app has been written to slow down automatically if the number of artists being queried is too high to perform the get requests all at once. For this reason, this app also takes into account the number of artists in your last search, if that search was less than a minute ago. If a slowdown is necessary, this will be indicated in the GUI's text browser.
@@ -19,10 +21,10 @@ Each artist has a limit associated with them, which determines the max number of
 
  Followed artists and albums found from the most recent search are saved to CSV files. Upon closing and reopening the app, the lists that were there upon closure will persist.
 
+If itunes returns no albums for a particular artist (keep in mind this would be *before* the albums are filtered by release date), the text browser will indicate this. This is likely an indication that the artist name has not been spelled exactly as it is listed in itunes OR the artist in question is one of the few musicians who does not sell content on itunes.
+
 A progress bar will appear when searching and should hide again when completed.
  
- 
-
 ## Installation
 To install the required dependencies, run:
 ```bash
