@@ -6,6 +6,12 @@
  ## Purpose
  I find it easy to miss when my favorite artists release music. I figured it would be nice to just be able to run a program in the background once a month or so to see if I missed something worthwhile.
 
+ ## Installation
+To install the required dependencies, run:
+```bash
+pip install -r requirements.txt
+```
+
  ## Usage
 1. Add any music artists that have content on itunes by entering their name in the text field on the Followed Artists Tab and then clicking the Follow button
    * name of the artist must match the spelling of that artist on itunes
@@ -26,8 +32,3 @@ Each artist has a limit associated with them, which determines the max number of
 If itunes returns no albums for a particular artist (keep in mind this would be *before* the albums are filtered by release date), the text browser will indicate this. This is likely an indication that the artist name has not been spelled exactly as it is listed in itunes OR the artist in question is one of the few musicians who does not sell content on itunes.
 
 A progress bar will appear when searching and should hide again when completed.
- 
-## Installation
-To install the required dependencies, run:
-```bash
-pip install -r requirements.txt
