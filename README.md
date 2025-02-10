@@ -1,6 +1,8 @@
 # Music-Release-Tracker
  An app implemeneted with PyQt that uses the itunes API to find recent releases from followed artists
 
+ ![image](https://github.com/user-attachments/assets/f4f5a067-9cef-49ed-baf5-850fe57d86f6)
+
  ## Purpose
  I find it easy to miss when my favorite artists release music. I figured it would be nice to just be able to run a program in the background once a month or so to see if I missed something worthwhile.
 
