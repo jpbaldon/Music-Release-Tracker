@@ -20,6 +20,8 @@ pip install -r requirements.txt
 3. Unfollow Artists by selecting their row in the table and clicking the Unfollow Highlighted Artists button.
 4. Search for recent releases from followed artists by navigating to the Albums to Check Out Tab, selecting a timeframe, and then clicking search.
 
+This project uses the Qt framework, © The Qt Company Ltd., licensed under the GNU GPL v3. See https://www.qt.io/licensing for details.
+
 ## Further Info
 iTunes limits the amount of get requests per ip address to about 20 per min. Consequently, this app has been written to slow down automatically if the number of artists being queried is too high to perform the get requests all at once. For this reason, this app also takes into account the number of artists in your last search, if that search was less than a minute ago. If a slowdown is necessary, this will be indicated in the GUI's text browser.
 
@@ -32,3 +34,15 @@ Each artist has a limit associated with them, which determines the max number of
 If iTunes returns no albums for a particular artist (keep in mind this would be *before* the albums are filtered by release date), the text browser will indicate this. This is likely an indication that the artist name has not been spelled exactly as it is listed in iTunes OR the artist in question is one of the few musicians who does not sell content on iTunes.
 
 A progress bar will appear when searching and should hide again when completed.
+
+## License
+
+This project is licensed under the GNU General Public License v3 (GPLv3).  
+See the [LICENSE](LICENSE) file for details.
+
+## Dependencies
+
+This project uses [PyQt](https://riverbankcomputing.com/software/pyqt/intro),  
+which is licensed under the GPL v3. By using PyQt, this project is also bound by the terms of the GPL license.
+
+For more information, see the [PyQt license terms](https://www.riverbankcomputing.com/commercial/license-faq).
